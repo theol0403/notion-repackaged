@@ -38,7 +38,7 @@ export NOTION_EXTRACTED_APP_NAME="extracted-app"
 export NOTION_VANILLA_SRC_NAME="vanilla-src"
 export NOTION_ENHANCED_SRC_NAME="enhanced-src"
 
-export NOTION_ENHANCER_REPO_URL="https://github.com/notion-enhancer/desktop"
+export NOTION_ENHANCER_REPO_URL="https://github.com/theol0403/desktop"
 export NOTION_ENHANCER_REPO_NAME="enhancer-desktop-src"
 
 export NOTION_REPACKAGED_HOMEPAGE="https://github.com/jamezrin/notion-repackaged"
