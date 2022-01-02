@@ -188,3 +188,8 @@ jobs:
         working-directory: ${{ matrix.edition }}-src
         run: find ./dist/ -maxdepth 1 -type f -exec openssl md5 {} +
         shell: bash
+      - name: Save artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: artifacts
+          path: ./dist/
