@@ -193,4 +193,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: artifacts
-          path: ./dist/
+          path: ${{ matrix.edition }}-src/dist/
