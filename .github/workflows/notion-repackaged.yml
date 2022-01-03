@@ -137,20 +137,13 @@ jobs:
         ${{ needs.preload-variables.outputs.notion_repackaged_revision }}
     strategy:
       matrix:
-        target: [windows, linux, macos]
-        edition: [vanilla, enhanced]
+        target: [linux, macos]
+        edition: [enhanced]
         include:
-          - target: windows
-            os: windows-latest
           - target: linux
             os: ubuntu-latest
           - target: macos
             os: macos-latest
-        exclude:
-          - target: windows
-            edition: vanilla
-          - target: macos
-            edition: vanilla
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
