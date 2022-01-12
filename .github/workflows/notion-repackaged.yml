@@ -190,3 +190,4 @@ jobs:
           path: |
             ${{ matrix.edition }}-src/dist/**.dmg
             ${{ matrix.edition }}-src/dist/**.rpm
+            ${{ matrix.edition }}-src/dist/**.exe
