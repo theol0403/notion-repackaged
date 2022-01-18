@@ -36,7 +36,8 @@ pushd "${NOTION_ENHANCER_REPO_NAME}" > /dev/null
 
 log "Checking out enhancer desktop..."
 git fetch
-git checkout ${NOTION_ENHANCER_DESKTOP_COMMIT}
+git checkout dev
+git pull
 git submodule update --init --recursive
 
 log "Installing enhancer desktop dependencies..."
